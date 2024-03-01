@@ -1,7 +1,7 @@
 // Copyright 2022 NNTU-CS
 #include <cstdint>
 #include "alg.h"
-
+#include "cmath"
 
 bool checkPrime(uint64_t value) {
   int valueInCoren = sqrt(value);
@@ -53,6 +53,9 @@ uint64_t sumPrime(uint64_t hbound) {
 		if (checkPrime(i) == true)
 		{
 			sumOfPrime += i;
+    }
+  }
+}
 		}
 	}
 	return sumOfPrime;
